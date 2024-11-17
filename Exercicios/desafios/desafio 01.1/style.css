@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body h1{
+background-image: linear-gradient(to bottom, (yellow), (orange));
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+body p{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;  
+   text-align: center;
+}
+img.imagem{
+    display: block;
+    margin: auto;
+}

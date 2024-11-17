@@ -1,0 +1,13 @@
+@charset "UTF-8";
+main h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+main p{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+main> img{
+    margin: auto;
+    display: initial;
+}
