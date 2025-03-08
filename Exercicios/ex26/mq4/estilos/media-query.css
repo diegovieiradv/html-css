@@ -2,45 +2,57 @@
 
 /*Todas as demais mídias*/
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@media print {
+* {
+    font-family: 'Courier New', Courier, monospace;
 }
-
-html{
-    height: 100vh;
-}
-
-body{
-    background: black url(../imagens/back-phone.jpg)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 main{
-    background-color: rgba(255, 255, 255, 0.514);
-    width: 80vw;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
+    border: 2px solid black;
 }
-
-h1{
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+main h1{
+    text-shadow: none;
+    color: black;
 }
-
-img{display: block;
-    margin: auto;}
-
-img#phone{display: block;}
+img#phone{display: none;}
 img#tablet{display: none;}
+img#impressora{display: block;}
+img#pc{display: none;}
+img#tv{display: none;}
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+
+img#phone{display: none;}
+img#tablet{display: block;}
 img#impressora{display: none;}
 img#pc{display: none;}
 img#tv{display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+}
