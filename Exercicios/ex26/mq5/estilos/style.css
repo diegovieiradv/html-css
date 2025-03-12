@@ -30,7 +30,7 @@ i#burguer:hover{
     background-color:#002333;
 }
 menu{
-    font-display: block;
+    display: none;
 }
 
 menu > ul{
