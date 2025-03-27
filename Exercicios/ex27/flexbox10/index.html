@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.conteiner{
+          background-color: aqua;
+          flex-flow: row nowrap;
+          display: flex;
+        }
+        div.itens{
+          background-color: chocolate;
+          border: 1px solid black;
+          text-align: center;
+          flex-basis: 150px;
+          
+        }
+        div#cresce{
+          flex-basis: 150px;
+          flex-grow: 0;
+          flex-shrink: 1;
+        }
+        div#mantem{
+          flex-basis: 150px;
+          flex-grow: 2;
+          flex-shrink: 0;
+        }
+        div#cresce2{
+          flex-basis: 150px;
+          flex-grow:  1;
+          flex-shrink: 2;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens" id="cresce">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, dolorem doloribus consequuntur qui neque molestiae aliquid excepturi pariatur aut reiciendis est modi esse, quas quia alias fugit, nisi temporibus amet.</div>
+        <div class="itens" id="mantem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, facilis? Perferendis in, ex asperiores officia cum possimus quam eligendi quo iusto accusamus, harum sunt quod voluptatum. Consequatur reprehenderit obcaecati quibusdam.</div>
+        <div class="itens" id="cresce2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestiae itaque, necessitatibus eum accusamus accusantium impedit placeat eos beatae reiciendis obcaecati porro, nihil, adipisci magnam? Odio recusandae eaque ipsum. Fugiat! </div>
+    </div>
+</body>
+</html>
