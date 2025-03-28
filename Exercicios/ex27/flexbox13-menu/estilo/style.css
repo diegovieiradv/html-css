@@ -24,6 +24,7 @@ header{
 header> h1{
     border: 1px dotted black;
     flex: 0 0 200px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.623);
 }
 header> nav{
     border: 1px dotted black;
